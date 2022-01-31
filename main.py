@@ -23,7 +23,7 @@ class Window(QMainWindow, Ui_Form):
         self.chosen_word = random.choice(wordlist)
         self.won = False
 
-        with open('ui/html') as f:
+        with open('ui/format.html') as f:
             self.html = f.read()
 
         self.T0 = [self.T01, self.T02, self.T03, self.T04, self.T05]
