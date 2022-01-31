@@ -1,0 +1,2971 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>383</width>
+    <height>506</height>
+   </rect>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::StrongFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>69</x>
+     <y>379</y>
+     <width>252</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_7">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QTextBrowser" name="T01">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>25</pointsize>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="autoFormatting">
+       <set>QTextEdit::AutoBulletList</set>
+      </property>
+      <property name="tabChangesFocus">
+       <bool>false</bool>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="overwriteMode">
+       <bool>true</bool>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextEditable|Qt::TextSelectableByMouse</set>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextBrowser" name="T02">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>25</pointsize>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="autoFormatting">
+       <set>QTextEdit::AutoBulletList</set>
+      </property>
+      <property name="tabChangesFocus">
+       <bool>false</bool>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="overwriteMode">
+       <bool>true</bool>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextEditable|Qt::TextSelectableByMouse</set>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextBrowser" name="T03">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>25</pointsize>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="autoFormatting">
+       <set>QTextEdit::AutoBulletList</set>
+      </property>
+      <property name="tabChangesFocus">
+       <bool>false</bool>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="overwriteMode">
+       <bool>true</bool>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextEditable|Qt::TextSelectableByMouse</set>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextBrowser" name="T04">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>25</pointsize>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="autoFormatting">
+       <set>QTextEdit::AutoBulletList</set>
+      </property>
+      <property name="tabChangesFocus">
+       <bool>false</bool>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="overwriteMode">
+       <bool>true</bool>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextEditable|Qt::TextSelectableByMouse</set>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextBrowser" name="T05">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>25</pointsize>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="autoFormatting">
+       <set>QTextEdit::AutoBulletList</set>
+      </property>
+      <property name="tabChangesFocus">
+       <bool>false</bool>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="overwriteMode">
+       <bool>true</bool>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextEditable|Qt::TextSelectableByMouse</set>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>210</y>
+     <width>252</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_4">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QTextBrowser" name="T41">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>25</pointsize>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="autoFormatting">
+       <set>QTextEdit::AutoBulletList</set>
+      </property>
+      <property name="tabChangesFocus">
+       <bool>false</bool>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="overwriteMode">
+       <bool>true</bool>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextEditable|Qt::TextSelectableByMouse</set>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextBrowser" name="T42">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>25</pointsize>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="autoFormatting">
+       <set>QTextEdit::AutoBulletList</set>
+      </property>
+      <property name="tabChangesFocus">
+       <bool>false</bool>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="overwriteMode">
+       <bool>true</bool>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextEditable|Qt::TextSelectableByMouse</set>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextBrowser" name="T43">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>25</pointsize>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="autoFormatting">
+       <set>QTextEdit::AutoBulletList</set>
+      </property>
+      <property name="tabChangesFocus">
+       <bool>false</bool>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="overwriteMode">
+       <bool>true</bool>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextEditable|Qt::TextSelectableByMouse</set>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextBrowser" name="T44">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>25</pointsize>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="autoFormatting">
+       <set>QTextEdit::AutoBulletList</set>
+      </property>
+      <property name="tabChangesFocus">
+       <bool>false</bool>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="overwriteMode">
+       <bool>true</bool>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextEditable|Qt::TextSelectableByMouse</set>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextBrowser" name="T45">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>25</pointsize>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="autoFormatting">
+       <set>QTextEdit::AutoBulletList</set>
+      </property>
+      <property name="tabChangesFocus">
+       <bool>false</bool>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="overwriteMode">
+       <bool>true</bool>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextEditable|Qt::TextSelectableByMouse</set>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>60</y>
+     <width>252</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_1">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QTextBrowser" name="T11">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>25</pointsize>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="autoFormatting">
+       <set>QTextEdit::AutoBulletList</set>
+      </property>
+      <property name="tabChangesFocus">
+       <bool>false</bool>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="overwriteMode">
+       <bool>true</bool>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextEditable|Qt::TextSelectableByMouse</set>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextBrowser" name="T12">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>25</pointsize>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="autoFormatting">
+       <set>QTextEdit::AutoBulletList</set>
+      </property>
+      <property name="tabChangesFocus">
+       <bool>false</bool>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="overwriteMode">
+       <bool>true</bool>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextEditable|Qt::TextSelectableByMouse</set>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextBrowser" name="T13">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>25</pointsize>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="autoFormatting">
+       <set>QTextEdit::AutoBulletList</set>
+      </property>
+      <property name="tabChangesFocus">
+       <bool>false</bool>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="overwriteMode">
+       <bool>true</bool>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextEditable|Qt::TextSelectableByMouse</set>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextBrowser" name="T14">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>25</pointsize>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="autoFormatting">
+       <set>QTextEdit::AutoBulletList</set>
+      </property>
+      <property name="tabChangesFocus">
+       <bool>false</bool>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="overwriteMode">
+       <bool>true</bool>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextEditable|Qt::TextSelectableByMouse</set>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextBrowser" name="T15">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>25</pointsize>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="autoFormatting">
+       <set>QTextEdit::AutoBulletList</set>
+      </property>
+      <property name="tabChangesFocus">
+       <bool>false</bool>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="overwriteMode">
+       <bool>true</bool>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextEditable|Qt::TextSelectableByMouse</set>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>260</y>
+     <width>252</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_5">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QTextBrowser" name="T51">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>25</pointsize>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="autoFormatting">
+       <set>QTextEdit::AutoBulletList</set>
+      </property>
+      <property name="tabChangesFocus">
+       <bool>false</bool>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="overwriteMode">
+       <bool>true</bool>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextEditable|Qt::TextSelectableByMouse</set>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextBrowser" name="T52">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>25</pointsize>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="autoFormatting">
+       <set>QTextEdit::AutoBulletList</set>
+      </property>
+      <property name="tabChangesFocus">
+       <bool>false</bool>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="overwriteMode">
+       <bool>true</bool>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextEditable|Qt::TextSelectableByMouse</set>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextBrowser" name="T53">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>25</pointsize>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="autoFormatting">
+       <set>QTextEdit::AutoBulletList</set>
+      </property>
+      <property name="tabChangesFocus">
+       <bool>false</bool>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="overwriteMode">
+       <bool>true</bool>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextEditable|Qt::TextSelectableByMouse</set>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextBrowser" name="T54">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>25</pointsize>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="autoFormatting">
+       <set>QTextEdit::AutoBulletList</set>
+      </property>
+      <property name="tabChangesFocus">
+       <bool>false</bool>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="overwriteMode">
+       <bool>true</bool>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextEditable|Qt::TextSelectableByMouse</set>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextBrowser" name="T55">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>25</pointsize>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="autoFormatting">
+       <set>QTextEdit::AutoBulletList</set>
+      </property>
+      <property name="tabChangesFocus">
+       <bool>false</bool>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="overwriteMode">
+       <bool>true</bool>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextEditable|Qt::TextSelectableByMouse</set>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>160</y>
+     <width>252</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QTextBrowser" name="T31">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>25</pointsize>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="autoFormatting">
+       <set>QTextEdit::AutoBulletList</set>
+      </property>
+      <property name="tabChangesFocus">
+       <bool>false</bool>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="overwriteMode">
+       <bool>true</bool>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextEditable|Qt::TextSelectableByMouse</set>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextBrowser" name="T32">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>25</pointsize>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="autoFormatting">
+       <set>QTextEdit::AutoBulletList</set>
+      </property>
+      <property name="tabChangesFocus">
+       <bool>false</bool>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="overwriteMode">
+       <bool>true</bool>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextEditable|Qt::TextSelectableByMouse</set>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextBrowser" name="T33">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>25</pointsize>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="autoFormatting">
+       <set>QTextEdit::AutoBulletList</set>
+      </property>
+      <property name="tabChangesFocus">
+       <bool>false</bool>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="overwriteMode">
+       <bool>true</bool>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextEditable|Qt::TextSelectableByMouse</set>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextBrowser" name="T34">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>25</pointsize>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="autoFormatting">
+       <set>QTextEdit::AutoBulletList</set>
+      </property>
+      <property name="tabChangesFocus">
+       <bool>false</bool>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="overwriteMode">
+       <bool>true</bool>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextEditable|Qt::TextSelectableByMouse</set>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextBrowser" name="T35">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>25</pointsize>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="autoFormatting">
+       <set>QTextEdit::AutoBulletList</set>
+      </property>
+      <property name="tabChangesFocus">
+       <bool>false</bool>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="overwriteMode">
+       <bool>true</bool>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextEditable|Qt::TextSelectableByMouse</set>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>110</y>
+     <width>252</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QTextBrowser" name="T21">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>25</pointsize>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="autoFormatting">
+       <set>QTextEdit::AutoBulletList</set>
+      </property>
+      <property name="tabChangesFocus">
+       <bool>false</bool>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="overwriteMode">
+       <bool>true</bool>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextEditable|Qt::TextSelectableByMouse</set>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextBrowser" name="T22">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>25</pointsize>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="autoFormatting">
+       <set>QTextEdit::AutoBulletList</set>
+      </property>
+      <property name="tabChangesFocus">
+       <bool>false</bool>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="overwriteMode">
+       <bool>true</bool>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextEditable|Qt::TextSelectableByMouse</set>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextBrowser" name="T23">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>25</pointsize>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="autoFormatting">
+       <set>QTextEdit::AutoBulletList</set>
+      </property>
+      <property name="tabChangesFocus">
+       <bool>false</bool>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="overwriteMode">
+       <bool>true</bool>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextEditable|Qt::TextSelectableByMouse</set>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextBrowser" name="T24">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>25</pointsize>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="autoFormatting">
+       <set>QTextEdit::AutoBulletList</set>
+      </property>
+      <property name="tabChangesFocus">
+       <bool>false</bool>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="overwriteMode">
+       <bool>true</bool>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextEditable|Qt::TextSelectableByMouse</set>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextBrowser" name="T25">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>25</pointsize>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="autoFormatting">
+       <set>QTextEdit::AutoBulletList</set>
+      </property>
+      <property name="tabChangesFocus">
+       <bool>false</bool>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="overwriteMode">
+       <bool>true</bool>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextEditable|Qt::TextSelectableByMouse</set>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>310</y>
+     <width>252</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_6">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QTextBrowser" name="T61">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>25</pointsize>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="autoFormatting">
+       <set>QTextEdit::AutoBulletList</set>
+      </property>
+      <property name="tabChangesFocus">
+       <bool>false</bool>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="overwriteMode">
+       <bool>true</bool>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextEditable|Qt::TextSelectableByMouse</set>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextBrowser" name="T62">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>25</pointsize>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="autoFormatting">
+       <set>QTextEdit::AutoBulletList</set>
+      </property>
+      <property name="tabChangesFocus">
+       <bool>false</bool>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="overwriteMode">
+       <bool>true</bool>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextEditable|Qt::TextSelectableByMouse</set>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextBrowser" name="T63">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>25</pointsize>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="autoFormatting">
+       <set>QTextEdit::AutoBulletList</set>
+      </property>
+      <property name="tabChangesFocus">
+       <bool>false</bool>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="overwriteMode">
+       <bool>true</bool>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextEditable|Qt::TextSelectableByMouse</set>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextBrowser" name="T64">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>25</pointsize>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="autoFormatting">
+       <set>QTextEdit::AutoBulletList</set>
+      </property>
+      <property name="tabChangesFocus">
+       <bool>false</bool>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="overwriteMode">
+       <bool>true</bool>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextEditable|Qt::TextSelectableByMouse</set>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextBrowser" name="T65">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Base">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>160</red>
+            <green>160</green>
+            <blue>160</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>25</pointsize>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="autoFormatting">
+       <set>QTextEdit::AutoBulletList</set>
+      </property>
+      <property name="tabChangesFocus">
+       <bool>false</bool>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="overwriteMode">
+       <bool>true</bool>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextEditable|Qt::TextSelectableByMouse</set>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
