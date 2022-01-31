@@ -1,7 +1,5 @@
 import random
 import time
-import string
-import sys
 
 from PyQt5.QtWidgets import (
     QApplication, QMainWindow
@@ -19,8 +17,24 @@ class Window(QMainWindow, Ui_Form):
         super().__init__(parent)
         self.setupUi(self)
         self.keyPressed.connect(self.on_key)
+        self.status.setVisible(False)
+        self.screen_width = self.frameGeometry().width()
+        self.invalid_width = self.status.width()
+
+        self.palette_r = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(170, 0, 0))
+        self.palette_r.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+
+        self.palette_g = QtGui.QPalette()
+        brush = QtGui.QBrush(QtGui.QColor(78, 184, 48))
+        self.palette_g.setBrush(QtGui.QPalette.Active, QtGui.QPalette.WindowText, brush)
+
+        self.status.setPalette(self.palette_r)
+
+
 
         self.chosen_word = random.choice(wordlist)
+        print(self.chosen_word)
         self.won = False
 
         with open('ui/format.html') as f:
@@ -35,15 +49,7 @@ class Window(QMainWindow, Ui_Form):
         self.T6 = [self.T61, self.T62, self.T63, self.T64, self.T65]
         self.T = self.T1 + self.T2 + self.T3 + self.T4 + self.T5 + self.T6 
         self.new_word = ''
-        # print(T1)
-        # for i in T1:
-        #     i.setText('B')
-        # self.show()
-        # self.connectSignalsSlots()
-        # self.keyPressEvent = self.keyPressEvent
-        # self.show()
-        # self.connect(keyPre)
-        # self.connectSignalsSlots()
+
 
     @pyqtSlot()
     def keyPressEvent(self, event):
@@ -55,14 +61,15 @@ class Window(QMainWindow, Ui_Form):
             i.clear()
             self.color(i, '')
         self.chosen_word = random.choice(wordlist)
-        print('reset')
         self.won = False
 
     def on_key(self, event):
         new_letter = None
+        self.status.setVisible(False)
 
         if event.key() == 16777220 and (self.T11.toPlainText() and self.T21.toPlainText() and self.T31.toPlainText()
                 and self.T41.toPlainText() and self.T51.toPlainText() and self.T61.toPlainText()):
+            self.reset()
             return
 
         if 65 <= event.key() <= 90: # New Letter
@@ -79,18 +86,31 @@ class Window(QMainWindow, Ui_Form):
         if event.key() == 16777220: # Enter
             if self.won:
                 self.reset()
-            print(self.new_word)
+
             if len(self.new_word) != 5:
                 return
 
             if self.chosen_word == self.new_word:
                 self.won = True
+                self.status.setPalette(self.palette_g)
+                self.status.setText('You Won !, press Enter to play again')
+                self.status.setVisible(True)
 
             result = logic(self.new_word, self.chosen_word)
             if not result:
+                self.status.setPalette(self.palette_r)
+                self.status.setText('not a word !')
+                self.status.setVisible(True)
+                y = self.status.pos().y()
+                for i in range(4):
+                    if i % 2:
+                        self.status.move(int((self.screen_width - self.invalid_width) / 2 + (5)), y)
+                    else:
+                        self.status.move(int((self.screen_width - self.invalid_width) / 2 - (5)), y)
+                    QApplication.processEvents()
+                    time.sleep(0.05)
+                self.status.move(int((self.screen_width - self.invalid_width) / 2), y)
                 return
-            else:
-                print(result)
 
             if not self.T11.toPlainText():
                 T = self.T1
@@ -144,27 +164,6 @@ class Window(QMainWindow, Ui_Form):
 
         letter.setPalette(palette)
 
-    # def keyPressEvent(self, e):
-    #     if e.key():
-    #         # print(e.key().toString)
-    #         # print(e.key())
-    #         if 65 <= e.key() <= 90:
-    #             print(chr(e.key()))
-    #         self.T11.setAcceptRichText(True)
-    #         self.T11.clear()
-    #         self.T11.setText('AAAAAAAAAAAAA')
-    #         # self.T11.repaint()
-    #         # qApp.processEvents()
-    #         print(self.T11.toPlainText())
-    #         # self.T11.setText('A')
-    #         # self.T11.setPlainText('A')
-    #         # self.T11.insertPlainText('A')
-    #         # self.T11.append('A')
-    #         # self.T11.setStyleSheet('color: blue')
-    #         # self.T11.setText('AAAAA')
-    #
-    #         # self.showMaximized()
-
 
 def except_hook(cls, exception, traceback):
     sys.__excepthook__(cls, exception, traceback)
@@ -176,34 +175,16 @@ def wordlist_loader():
         wordlist = w.read()
         return wordlist.splitlines()
 
-# def inp():
-#     try:
-#         return input('input word:').upper()
-#     except EOFError:
-#         pass
-#     except KeyboardInterrupt:
-#         pass
-#     except SystemExit:
-#         pass
-
 
 def logic(current_word, chosen_word):
-    # input_list = []
-    # if rand_word:
-    #     chosen_word = random.choice(wordlist)
-    print(chosen_word)
-    # current_word = ''
     correct_letters = {}
-    print(current_word)
 
 
     if current_word not in wordlist:
-        print('not in wordlist')
         return
 
-    if current_word == chosen_word:
-        print('YOU WON!')
-
+    # if current_word == chosen_word:
+    #     print('YOU WON!')
 
     for l in range(5):
 
