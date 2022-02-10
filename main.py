@@ -1,15 +1,22 @@
 import random
 import time
+import json
 
-from PyQt5.QtWidgets import (
-    QApplication, QMainWindow
-)
 from PyQt5 import QtCore, QtGui
-from PyQt5.QtCore import pyqtSlot
-from PyQt5.QtCore import pyqtSignal
-# from PyQt5.uic import loadUi
+from PyQt5.QtWidgets import (
+    QApplication, QMainWindow, QDialog, QTableWidget, QTableWidgetItem
+)
+# from PyQt5.QtCore import pyqtSlot
 
 from ui.gui import Ui_Form
+from ui.stats import Ui_Dialog
+
+
+# class Dialog(QDialog, Ui_Dialog):
+#     keyPressed = QtCore.pyqtSignal(QtCore.QEvent)
+#     def __init__(self, parent=None):
+#         super().__init__(parent)
+#         self.setupUi(self)
 
 class Window(QMainWindow, Ui_Form):
     keyPressed = QtCore.pyqtSignal(QtCore.QEvent)
@@ -20,6 +27,7 @@ class Window(QMainWindow, Ui_Form):
         self.status.setVisible(False)
         self.screen_width = self.frameGeometry().width()
         self.invalid_width = self.status.width()
+        self.done = True
 
         self.palette_r = QtGui.QPalette()
         brush = QtGui.QBrush(QtGui.QColor(170, 0, 0))
@@ -31,7 +39,8 @@ class Window(QMainWindow, Ui_Form):
 
         self.status.setPalette(self.palette_r)
 
-
+        self.used_letters = set()
+        self.used_words = []
 
         self.chosen_word = random.choice(wordlist)
         print(self.chosen_word)
@@ -40,6 +49,16 @@ class Window(QMainWindow, Ui_Form):
         with open('ui/format.html') as f:
             self.html = f.read()
 
+        buttons = [[self.info, './ui/info-32.png'], [self.hint, './ui/hint-32.png'], [self.stats, './ui/stats-32.png']]
+        for b in buttons:
+            b[0].setIcon(QtGui.QIcon(b[1]))
+            b[0].setIconSize(QtCore.QSize(32,32))
+            b[0].setStyleSheet("background-color: rgba(255, 255, 255, 0);")
+        # self.info.clicked.connect(self.info_dialog)
+        self.stats.clicked.connect(self.stats_dialog)
+        self.hint.clicked.connect(self.hint_apply)
+
+
         self.T0 = [self.T01, self.T02, self.T03, self.T04, self.T05]
         self.T1 = [self.T11, self.T12, self.T13, self.T14, self.T15]
         self.T2 = [self.T21, self.T22, self.T23, self.T24, self.T25]
@@ -47,108 +66,156 @@ class Window(QMainWindow, Ui_Form):
         self.T4 = [self.T41, self.T42, self.T43, self.T44, self.T45]
         self.T5 = [self.T51, self.T52, self.T53, self.T54, self.T55]
         self.T6 = [self.T61, self.T62, self.T63, self.T64, self.T65]
-        self.T = self.T1 + self.T2 + self.T3 + self.T4 + self.T5 + self.T6 
+        self.T = {1:self.T1, 2:self.T2, 3:self.T3, 4:self.T4, 5:self.T5, 6:self.T6}
         self.new_word = ''
 
+    def closeEvent(self, a0: QtGui.QCloseEvent) -> None:
+        statistics_saver(statistics)
+        print('END!')
 
-    @pyqtSlot()
+    # @pyqtSlot()
     def keyPressEvent(self, event):
-        super().keyPressEvent(event)
         self.keyPressed.emit(event)
 
     def reset(self):
-        for i in self.T1 + self.T2 + self.T3 + self.T4 + self.T5 + self.T6:
-            i.clear()
-            self.color(i, '')
+        for word in self.T.values():
+            for letter in word:
+                letter.clear()
+                self.color(letter, '')
+        for letter in self.T0:
+            letter.clear()
+            self.color(letter, '')
         self.chosen_word = random.choice(wordlist)
+        self.used_words = []
+        self.used_letters = set()
         self.won = False
+
+    def add_word(self):
+        if self.won:
+            self.reset()
+
+        if len(self.new_word) != 5:
+            return
+
+        if self.chosen_word == self.new_word:
+            self.won = True
+            statistics['Times Won'] += 1
+            statistics['Best guess count'] = min(statistics['Best guess count'], len(self.used_words) + 1)
+            statistics_saver(statistics)
+            self.status.setPalette(self.palette_g)
+            self.status.setText('You Won !, press Enter to play again')
+            self.status.setVisible(True)
+
+        result = logic(self.new_word, self.chosen_word)
+        if not result:
+            self.status.setPalette(self.palette_r)
+            self.status.setText('not a word !')
+            self.status.setVisible(True)
+            y = self.status.pos().y()
+            for i in range(4):
+                if i % 2:
+                    self.status.move(int((self.screen_width - self.invalid_width) / 2 + 5), y)
+                else:
+                    self.status.move(int((self.screen_width - self.invalid_width) / 2 - 5), y)
+                QApplication.processEvents()
+                time.sleep(0.05)
+            self.status.move(int((self.screen_width - self.invalid_width) / 2), y)
+            return
+
+        self.used_letters.update(self.new_word)
+        self.used_words.append(self.new_word)
+
+        T = self.T[len(self.used_words)]
+        statistics['Guesses'] += 1
+
+        for i in range(5):
+            html = self.html.replace('</p', self.new_word[i] + '</p')
+            T[i].setHtml(html)
+            self.color(T[i], result[i + 1])
+        [x.clear() for x in self.T0]
+        self.new_word = ''
+
+        if self.chosen_word != self.new_word and len(self.used_words) == 6 and not self.won:
+            statistics['Times Lost'] += 1
+            statistics_saver(statistics)
+            self.done = False
+            for i in range(5):
+                html = self.html.replace('</p', self.chosen_word[i] + '</p')
+                self.T0[i].setHtml(html)
+                self.color(self.T0[i], 'green')
+                QApplication.processEvents()
+                time.sleep(0.3)
+            self.done = True
+
+    def hint_apply(self):
+        statistics['Hints Used'] += 1
+        inter_len = 5
+        random.shuffle(wordlist)
+        for w in wordlist:
+            inter = len(set(w).intersection(self.used_letters))
+            if inter_len > inter and w not in self.used_words:
+                inter_len = inter
+                self.new_word = w
+            if inter == 0:
+                break
+        self.add_word()
+
+    def stats_dialog(self):
+        self.dialog = QDialog()
+        self.dialog.ui = Ui_Dialog()
+        self.dialog.ui.setupUi(self.dialog)
+        self.dialog.setAttribute(QtCore.Qt.WA_DeleteOnClose)
+        self.dialog.setWindowFlags(QtCore.Qt.Popup)
+
+        w = self.dialog.width()
+        self.dialog.ui.tableWidget.setColumnWidth(0, w * 2 / 3)
+        self.dialog.ui.tableWidget.setColumnWidth(1, w / 3)
+
+        for n, key in enumerate(statistics.keys()):
+            newitem = QTableWidgetItem(key)
+            self.dialog.ui.tableWidget.setItem(n, 0, newitem)
+            newitem = QTableWidgetItem(str(statistics[key]))
+            self.dialog.ui.tableWidget.setItem(n, 1, newitem)
+        self.raise_()
+        self.setFocus()
+
+        self.dialog.exec()
+        self.activateWindow()
 
     def on_key(self, event):
         new_letter = None
         self.status.setVisible(False)
+        if not self.done:
+            return
 
-        if event.key() == 16777220 and (self.T11.toPlainText() and self.T21.toPlainText() and self.T31.toPlainText()
-                and self.T41.toPlainText() and self.T51.toPlainText() and self.T61.toPlainText()):
+        if event.key() in [16777220, 16777217] and len(self.used_words) == 6:
             self.reset()
+            return
+        elif len(self.used_words) == 6:
             return
 
         if 65 <= event.key() <= 90: # New Letter
             new_letter = chr(event.key())
+            if len(self.new_word) < 5 and not self.won:
+                self.new_word += new_letter
+                html = self.html.replace('</p', new_letter + '</p')
+                self.T0[len(self.new_word) - 1].setText(html)
+            return
 
         if event.key() == 16777219: # Backspace
             self.new_word = self.new_word[:-1]
-            for t in reversed(self.T0):
-                if t.toPlainText():
-                    t.setText('')
-                    break
+            self.T0[len(self.new_word)].setText('')
             return
 
         if event.key() == 16777220: # Enter
-            if self.won:
-                self.reset()
+            self.add_word()
 
-            if len(self.new_word) != 5:
-                return
+        if event.key() == 16777217:  # TAB for hint
+            self.hint_apply()
 
-            if self.chosen_word == self.new_word:
-                self.won = True
-                self.status.setPalette(self.palette_g)
-                self.status.setText('You Won !, press Enter to play again')
-                self.status.setVisible(True)
+        if event.key() == 96:  # stats `tilde`
+            self.stats_dialog()
 
-            result = logic(self.new_word, self.chosen_word)
-            if not result:
-                self.status.setPalette(self.palette_r)
-                self.status.setText('not a word !')
-                self.status.setVisible(True)
-                y = self.status.pos().y()
-                for i in range(4):
-                    if i % 2:
-                        self.status.move(int((self.screen_width - self.invalid_width) / 2 + (5)), y)
-                    else:
-                        self.status.move(int((self.screen_width - self.invalid_width) / 2 - (5)), y)
-                    QApplication.processEvents()
-                    time.sleep(0.05)
-                self.status.move(int((self.screen_width - self.invalid_width) / 2), y)
-                return
-
-            if not self.T11.toPlainText():
-                T = self.T1
-            elif not self.T21.toPlainText():
-                T = self.T2
-            elif not self.T31.toPlainText():
-                T = self.T3
-            elif not self.T41.toPlainText():
-                T = self.T4
-            elif not self.T51.toPlainText():
-                T = self.T5
-            elif not self.T61.toPlainText():
-                T = self.T6
-            else:
-                return
-
-
-            for i in range(5):
-                html = self.html.replace('</p', self.new_word[i] + '</p')
-                T[i].setHtml(html)
-                self.color(T[i], result[i + 1])
-                self.T0[i].clear()
-            self.new_word = ''
-
-        if new_letter and len(self.new_word) < 5 and not self.won:
-                self.new_word += new_letter
-                html = self.html.replace('</p', new_letter + '</p')
-                if not self.T01.toPlainText():
-                    self.T01.setHtml(html)
-                elif not self.T02.toPlainText():
-                    self.T02.setText(html)
-                elif not self.T03.toPlainText():
-                    self.T03.setText(html)
-                elif not self.T04.toPlainText():
-                    self.T04.setText(html)
-                elif not self.T05.toPlainText():
-                    self.T05.setText(html)
-                return
 
     def color(self, letter, color):
         palette = QtGui.QPalette()
@@ -164,50 +231,53 @@ class Window(QMainWindow, Ui_Form):
 
         letter.setPalette(palette)
 
-
-def except_hook(cls, exception, traceback):
-    sys.__excepthook__(cls, exception, traceback)
-
-
-
 def wordlist_loader():
     with open('words.txt') as w:
         wordlist = w.read()
         return wordlist.splitlines()
 
+def statistics_loader():
+    try:
+        with open('stats.txt', 'r') as s:
+            return json.load(s)
+    except FileNotFoundError:
+        return None
+
+def statistics_saver(statistics):
+    statistics['Times Played'] = statistics['Times Won'] + statistics['Times Lost']
+    statistics['Won %'] = round(statistics['Times Won'] / statistics['Times Played'] * 100)
+    statistics['Average guess count'] = round(statistics['Guesses'] / statistics['Times Played'], 2)
+    with open('stats.txt', 'w') as s:
+        s.write(json.dumps(statistics))
 
 def logic(current_word, chosen_word):
     correct_letters = {}
 
-
     if current_word not in wordlist:
         return
 
-    # if current_word == chosen_word:
-    #     print('YOU WON!')
-
     for l in range(5):
-
         if l+1 not in correct_letters.keys():
             correct_letters[l + 1] = ''
 
         if current_word[l] == chosen_word[l]:
-            # correct_letters[l + 1] = current_word[l]
             correct_letters[l + 1] = 'green'
         elif current_word[l] in chosen_word:
             correct_letters[l + 1] = 'yellow'
 
-
     return correct_letters
 
+def except_hook(cls, exception, traceback):
+    sys.__excepthook__(cls, exception, traceback)
 
 if __name__ == "__main__":
     wordlist = wordlist_loader()
-
+    statistics = statistics_loader()
+    if not statistics:
+        statistics_saver({'Times Played': 0, 'Times Won': 0, 'Times Lost': 0, 'Won %': 0, 'Hints Used': 0, 'Guesses': 0, 'Average guess count': 0, 'Best guess count': 0})
     app = QApplication([])
     MainWindow = QMainWindow()
     win = Window()
-    # win.setupUi(MainWindow)
     win.show()
     import sys
     sys.excepthook = except_hook
