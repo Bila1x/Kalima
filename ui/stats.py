@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '.\ui\stats.ui'
+# Form implementation generated from reading ui file '.\stats.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.2
 #
@@ -33,7 +33,8 @@ class Ui_Dialog(object):
         palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Base, brush)
         self.tableWidget.setPalette(palette)
         font = QtGui.QFont()
-        font.setPointSize(12)
+        font.setFamily("Consolas")
+        font.setPointSize(11)
         font.setBold(True)
         font.setWeight(75)
         self.tableWidget.setFont(font)

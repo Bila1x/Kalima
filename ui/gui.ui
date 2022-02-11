@@ -2877,7 +2877,7 @@ p, li { white-space: pre-wrap; }
    <property name="geometry">
     <rect>
      <x>15</x>
-     <y>15</y>
+     <y>12</y>
      <width>32</width>
      <height>32</height>
     </rect>
@@ -2889,8 +2889,8 @@ p, li { white-space: pre-wrap; }
   <widget class="QPushButton" name="stats">
    <property name="geometry">
     <rect>
-     <x>15</x>
-     <y>453</y>
+     <x>169</x>
+     <y>12</y>
      <width>32</width>
      <height>32</height>
     </rect>
@@ -2903,7 +2903,7 @@ p, li { white-space: pre-wrap; }
    <property name="geometry">
     <rect>
      <x>323</x>
-     <y>453</y>
+     <y>12</y>
      <width>32</width>
      <height>32</height>
     </rect>

@@ -10,6 +10,7 @@ from PyQt5.QtWidgets import (
 
 from ui.gui import Ui_Form
 from ui.stats import Ui_Dialog
+from ui.info import Ui_Info
 
 
 # class Dialog(QDialog, Ui_Dialog):
@@ -52,9 +53,9 @@ class Window(QMainWindow, Ui_Form):
         buttons = [[self.info, './ui/info-32.png'], [self.hint, './ui/hint-32.png'], [self.stats, './ui/stats-32.png']]
         for b in buttons:
             b[0].setIcon(QtGui.QIcon(b[1]))
-            b[0].setIconSize(QtCore.QSize(32,32))
+            b[0].setIconSize(QtCore.QSize(24,24))
             b[0].setStyleSheet("background-color: rgba(255, 255, 255, 0);")
-        # self.info.clicked.connect(self.info_dialog)
+        self.info.clicked.connect(self.info_dialog)
         self.stats.clicked.connect(self.stats_dialog)
         self.hint.clicked.connect(self.hint_apply)
 
@@ -160,6 +161,14 @@ class Window(QMainWindow, Ui_Form):
                 break
         self.add_word()
 
+    def info_dialog(self):
+        self.dialog2 = QDialog()
+        self.dialog2.ui = Ui_Info()
+        self.dialog2.ui.setupUi(self.dialog2)
+        self.dialog2.setAttribute(QtCore.Qt.WA_DeleteOnClose)
+        self.dialog2.setWindowFlags(QtCore.Qt.Popup)
+        self.dialog2.exec()
+
     def stats_dialog(self):
         self.dialog = QDialog()
         self.dialog.ui = Ui_Dialog()
@@ -176,9 +185,6 @@ class Window(QMainWindow, Ui_Form):
             self.dialog.ui.tableWidget.setItem(n, 0, newitem)
             newitem = QTableWidgetItem(str(statistics[key]))
             self.dialog.ui.tableWidget.setItem(n, 1, newitem)
-        self.raise_()
-        self.setFocus()
-
         self.dialog.exec()
         self.activateWindow()
 
@@ -215,6 +221,9 @@ class Window(QMainWindow, Ui_Form):
 
         if event.key() == 96:  # stats `tilde`
             self.stats_dialog()
+
+        if event.key() == 16777264:  # Help `F1`
+            self.info_dialog()
 
 
     def color(self, letter, color):
