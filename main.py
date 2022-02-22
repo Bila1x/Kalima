@@ -1,23 +1,16 @@
 import random
 import time
 import json
+import threading
 
 from PyQt5 import QtCore, QtGui
 from PyQt5.QtWidgets import (
     QApplication, QMainWindow, QDialog, QTableWidget, QTableWidgetItem
 )
-# from PyQt5.QtCore import pyqtSlot
 
 from ui.gui import Ui_Form
 from ui.stats import Ui_Dialog
 from ui.info import Ui_Info
-
-
-# class Dialog(QDialog, Ui_Dialog):
-#     keyPressed = QtCore.pyqtSignal(QtCore.QEvent)
-#     def __init__(self, parent=None):
-#         super().__init__(parent)
-#         self.setupUi(self)
 
 class Window(QMainWindow, Ui_Form):
     keyPressed = QtCore.pyqtSignal(QtCore.QEvent)
@@ -58,7 +51,6 @@ class Window(QMainWindow, Ui_Form):
         self.info.clicked.connect(self.info_dialog)
         self.stats.clicked.connect(self.stats_dialog)
         self.hint.clicked.connect(self.hint_apply)
-
 
         self.T0 = [self.T01, self.T02, self.T03, self.T04, self.T05]
         self.T1 = [self.T11, self.T12, self.T13, self.T14, self.T15]
@@ -101,8 +93,12 @@ class Window(QMainWindow, Ui_Form):
         if self.chosen_word == self.new_word:
             self.won = True
             statistics['Times Won'] += 1
-            statistics['Best guess count'] = min(statistics['Best guess count'], len(self.used_words) + 1)
-            statistics_saver(statistics)
+            if statistics['Best guess count']:
+                statistics['Best guess count'] = min(statistics['Best guess count'], len(self.used_words) + 1)
+            else:
+                statistics['Best guess count'] = len(self.used_words) + 1
+            th = threading.Thread(target=statistics_saver, args=(statistics, ))
+            th.start()
             self.status.setPalette(self.palette_g)
             self.status.setText('You Won !, press Enter to play again')
             self.status.setVisible(True)
@@ -138,7 +134,8 @@ class Window(QMainWindow, Ui_Form):
 
         if self.chosen_word != self.new_word and len(self.used_words) == 6 and not self.won:
             statistics['Times Lost'] += 1
-            statistics_saver(statistics)
+            th = threading.Thread(target=statistics_saver, args=(statistics,))
+            th.start()
             self.done = False
             for i in range(5):
                 html = self.html.replace('</p', self.chosen_word[i] + '</p')
@@ -200,7 +197,7 @@ class Window(QMainWindow, Ui_Form):
         elif len(self.used_words) == 6:
             return
 
-        if 65 <= event.key() <= 90: # New Letter
+        if 65 <= event.key() <= 90:  # New Letter
             new_letter = chr(event.key())
             if len(self.new_word) < 5 and not self.won:
                 self.new_word += new_letter
@@ -208,15 +205,15 @@ class Window(QMainWindow, Ui_Form):
                 self.T0[len(self.new_word) - 1].setText(html)
             return
 
-        if event.key() == 16777219: # Backspace
+        if event.key() == 16777219:  # `Backspace`
             self.new_word = self.new_word[:-1]
             self.T0[len(self.new_word)].setText('')
             return
 
-        if event.key() == 16777220: # Enter
+        if event.key() == 16777220:  # `Enter`
             self.add_word()
 
-        if event.key() == 16777217:  # TAB for hint
+        if event.key() == 16777217:  # hint `TAB`
             self.hint_apply()
 
         if event.key() == 96:  # stats `tilde`
@@ -241,23 +238,29 @@ class Window(QMainWindow, Ui_Form):
         letter.setPalette(palette)
 
 def wordlist_loader():
-    with open('words.txt') as w:
-        wordlist = w.read()
-        return wordlist.splitlines()
+    with open('words.txt', 'r') as w:
+        words = w.read()
+        return words.splitlines()
 
 def statistics_loader():
     try:
         with open('stats.txt', 'r') as s:
             return json.load(s)
-    except FileNotFoundError:
-        return None
+    except (FileNotFoundError, json.decoder.JSONDecodeError):
+        return {'Times Played': 0, 'Times Won': 0, 'Times Lost': 0, 'Won %': 0, 'Hints Used': 0,
+                'Guesses': 0, 'Average guess count': 0, 'Best guess count': None}
 
 def statistics_saver(statistics):
     statistics['Times Played'] = statistics['Times Won'] + statistics['Times Lost']
-    statistics['Won %'] = round(statistics['Times Won'] / statistics['Times Played'] * 100)
-    statistics['Average guess count'] = round(statistics['Guesses'] / statistics['Times Played'], 2)
+    if statistics['Times Played']:
+        statistics['Won %'] = round(statistics['Times Won'] / statistics['Times Played'] * 100)
+        statistics['Average guess count'] = round(statistics['Guesses'] / statistics['Times Played'], 2)
+    else:
+        statistics['Won %'], statistics['Average guess count'] = 0, 0
+
     with open('stats.txt', 'w') as s:
         s.write(json.dumps(statistics))
+
 
 def logic(current_word, chosen_word):
     correct_letters = {}
@@ -266,9 +269,8 @@ def logic(current_word, chosen_word):
         return
 
     for l in range(5):
-        if l+1 not in correct_letters.keys():
+        if l + 1 not in correct_letters.keys():
             correct_letters[l + 1] = ''
-
         if current_word[l] == chosen_word[l]:
             correct_letters[l + 1] = 'green'
         elif current_word[l] in chosen_word:
@@ -282,8 +284,6 @@ def except_hook(cls, exception, traceback):
 if __name__ == "__main__":
     wordlist = wordlist_loader()
     statistics = statistics_loader()
-    if not statistics:
-        statistics_saver({'Times Played': 0, 'Times Won': 0, 'Times Lost': 0, 'Won %': 0, 'Hints Used': 0, 'Guesses': 0, 'Average guess count': 0, 'Best guess count': 0})
     app = QApplication([])
     MainWindow = QMainWindow()
     win = Window()
