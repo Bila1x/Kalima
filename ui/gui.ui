@@ -97,6 +97,12 @@
         <pointsize>25</pointsize>
        </font>
       </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
       <property name="autoFormatting">
        <set>QTextEdit::AutoBulletList</set>
       </property>
@@ -170,6 +176,12 @@ p, li { white-space: pre-wrap; }
        <font>
         <pointsize>25</pointsize>
        </font>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
       </property>
       <property name="autoFormatting">
        <set>QTextEdit::AutoBulletList</set>
@@ -245,6 +257,12 @@ p, li { white-space: pre-wrap; }
         <pointsize>25</pointsize>
        </font>
       </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
       <property name="autoFormatting">
        <set>QTextEdit::AutoBulletList</set>
       </property>
@@ -319,6 +337,12 @@ p, li { white-space: pre-wrap; }
         <pointsize>25</pointsize>
        </font>
       </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
       <property name="autoFormatting">
        <set>QTextEdit::AutoBulletList</set>
       </property>
@@ -392,6 +416,12 @@ p, li { white-space: pre-wrap; }
        <font>
         <pointsize>25</pointsize>
        </font>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
       </property>
       <property name="autoFormatting">
        <set>QTextEdit::AutoBulletList</set>
@@ -482,6 +512,12 @@ p, li { white-space: pre-wrap; }
         <pointsize>25</pointsize>
        </font>
       </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
       <property name="autoFormatting">
        <set>QTextEdit::AutoBulletList</set>
       </property>
@@ -555,6 +591,12 @@ p, li { white-space: pre-wrap; }
        <font>
         <pointsize>25</pointsize>
        </font>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
       </property>
       <property name="autoFormatting">
        <set>QTextEdit::AutoBulletList</set>
@@ -630,6 +672,12 @@ p, li { white-space: pre-wrap; }
         <pointsize>25</pointsize>
        </font>
       </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
       <property name="autoFormatting">
        <set>QTextEdit::AutoBulletList</set>
       </property>
@@ -704,6 +752,12 @@ p, li { white-space: pre-wrap; }
         <pointsize>25</pointsize>
        </font>
       </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
       <property name="autoFormatting">
        <set>QTextEdit::AutoBulletList</set>
       </property>
@@ -777,6 +831,12 @@ p, li { white-space: pre-wrap; }
        <font>
         <pointsize>25</pointsize>
        </font>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
       </property>
       <property name="autoFormatting">
        <set>QTextEdit::AutoBulletList</set>
@@ -867,6 +927,12 @@ p, li { white-space: pre-wrap; }
         <pointsize>25</pointsize>
        </font>
       </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
       <property name="autoFormatting">
        <set>QTextEdit::AutoBulletList</set>
       </property>
@@ -940,6 +1006,12 @@ p, li { white-space: pre-wrap; }
        <font>
         <pointsize>25</pointsize>
        </font>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
       </property>
       <property name="autoFormatting">
        <set>QTextEdit::AutoBulletList</set>
@@ -1015,6 +1087,12 @@ p, li { white-space: pre-wrap; }
         <pointsize>25</pointsize>
        </font>
       </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
       <property name="autoFormatting">
        <set>QTextEdit::AutoBulletList</set>
       </property>
@@ -1089,6 +1167,12 @@ p, li { white-space: pre-wrap; }
         <pointsize>25</pointsize>
        </font>
       </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
       <property name="autoFormatting">
        <set>QTextEdit::AutoBulletList</set>
       </property>
@@ -1162,6 +1246,12 @@ p, li { white-space: pre-wrap; }
        <font>
         <pointsize>25</pointsize>
        </font>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
       </property>
       <property name="autoFormatting">
        <set>QTextEdit::AutoBulletList</set>
@@ -1252,6 +1342,12 @@ p, li { white-space: pre-wrap; }
         <pointsize>25</pointsize>
        </font>
       </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
       <property name="autoFormatting">
        <set>QTextEdit::AutoBulletList</set>
       </property>
@@ -1325,6 +1421,12 @@ p, li { white-space: pre-wrap; }
        <font>
         <pointsize>25</pointsize>
        </font>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
       </property>
       <property name="autoFormatting">
        <set>QTextEdit::AutoBulletList</set>
@@ -1400,6 +1502,12 @@ p, li { white-space: pre-wrap; }
         <pointsize>25</pointsize>
        </font>
       </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
       <property name="autoFormatting">
        <set>QTextEdit::AutoBulletList</set>
       </property>
@@ -1474,6 +1582,12 @@ p, li { white-space: pre-wrap; }
         <pointsize>25</pointsize>
        </font>
       </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
       <property name="autoFormatting">
        <set>QTextEdit::AutoBulletList</set>
       </property>
@@ -1547,6 +1661,12 @@ p, li { white-space: pre-wrap; }
        <font>
         <pointsize>25</pointsize>
        </font>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
       </property>
       <property name="autoFormatting">
        <set>QTextEdit::AutoBulletList</set>
@@ -1637,6 +1757,12 @@ p, li { white-space: pre-wrap; }
         <pointsize>25</pointsize>
        </font>
       </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
       <property name="autoFormatting">
        <set>QTextEdit::AutoBulletList</set>
       </property>
@@ -1710,6 +1836,12 @@ p, li { white-space: pre-wrap; }
        <font>
         <pointsize>25</pointsize>
        </font>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
       </property>
       <property name="autoFormatting">
        <set>QTextEdit::AutoBulletList</set>
@@ -1788,6 +1920,12 @@ p, li { white-space: pre-wrap; }
       <property name="autoFillBackground">
        <bool>true</bool>
       </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
       <property name="autoFormatting">
        <set>QTextEdit::AutoBulletList</set>
       </property>
@@ -1862,6 +2000,12 @@ p, li { white-space: pre-wrap; }
         <pointsize>25</pointsize>
        </font>
       </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
       <property name="autoFormatting">
        <set>QTextEdit::AutoBulletList</set>
       </property>
@@ -1935,6 +2079,12 @@ p, li { white-space: pre-wrap; }
        <font>
         <pointsize>25</pointsize>
        </font>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
       </property>
       <property name="autoFormatting">
        <set>QTextEdit::AutoBulletList</set>
@@ -2025,6 +2175,12 @@ p, li { white-space: pre-wrap; }
         <pointsize>25</pointsize>
        </font>
       </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
       <property name="autoFormatting">
        <set>QTextEdit::AutoBulletList</set>
       </property>
@@ -2098,6 +2254,12 @@ p, li { white-space: pre-wrap; }
        <font>
         <pointsize>25</pointsize>
        </font>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
       </property>
       <property name="autoFormatting">
        <set>QTextEdit::AutoBulletList</set>
@@ -2173,6 +2335,12 @@ p, li { white-space: pre-wrap; }
         <pointsize>25</pointsize>
        </font>
       </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
       <property name="autoFormatting">
        <set>QTextEdit::AutoBulletList</set>
       </property>
@@ -2247,6 +2415,12 @@ p, li { white-space: pre-wrap; }
         <pointsize>25</pointsize>
        </font>
       </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
       <property name="autoFormatting">
        <set>QTextEdit::AutoBulletList</set>
       </property>
@@ -2320,6 +2494,12 @@ p, li { white-space: pre-wrap; }
        <font>
         <pointsize>25</pointsize>
        </font>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
       </property>
       <property name="autoFormatting">
        <set>QTextEdit::AutoBulletList</set>
@@ -2410,6 +2590,12 @@ p, li { white-space: pre-wrap; }
         <pointsize>25</pointsize>
        </font>
       </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
       <property name="autoFormatting">
        <set>QTextEdit::AutoBulletList</set>
       </property>
@@ -2483,6 +2669,12 @@ p, li { white-space: pre-wrap; }
        <font>
         <pointsize>25</pointsize>
        </font>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
       </property>
       <property name="autoFormatting">
        <set>QTextEdit::AutoBulletList</set>
@@ -2558,6 +2750,12 @@ p, li { white-space: pre-wrap; }
         <pointsize>25</pointsize>
        </font>
       </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
       <property name="autoFormatting">
        <set>QTextEdit::AutoBulletList</set>
       </property>
@@ -2632,6 +2830,12 @@ p, li { white-space: pre-wrap; }
         <pointsize>25</pointsize>
        </font>
       </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
       <property name="autoFormatting">
        <set>QTextEdit::AutoBulletList</set>
       </property>
@@ -2705,6 +2909,12 @@ p, li { white-space: pre-wrap; }
        <font>
         <pointsize>25</pointsize>
        </font>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
       </property>
       <property name="autoFormatting">
        <set>QTextEdit::AutoBulletList</set>

@@ -37,7 +37,6 @@ class Window(QMainWindow, Ui_Form):
         self.used_words = []
 
         self.chosen_word = random.choice(wordlist)
-        print(self.chosen_word)
         self.won = False
 
         with open('ui/format.html') as f:
@@ -128,7 +127,7 @@ class Window(QMainWindow, Ui_Form):
         for i in range(5):
             html = self.html.replace('</p', self.new_word[i] + '</p')
             T[i].setHtml(html)
-            self.color(T[i], result[i + 1])
+            self.color(T[i], result[i])
         [x.clear() for x in self.T0]
         self.new_word = ''
 
@@ -159,30 +158,42 @@ class Window(QMainWindow, Ui_Form):
         self.add_word()
 
     def info_dialog(self):
-        self.dialog2 = QDialog()
-        self.dialog2.ui = Ui_Info()
-        self.dialog2.ui.setupUi(self.dialog2)
-        self.dialog2.setAttribute(QtCore.Qt.WA_DeleteOnClose)
-        self.dialog2.setWindowFlags(QtCore.Qt.Popup)
-        self.dialog2.exec()
+        dialog2 = QDialog()
+        dialog2.ui = Ui_Info()
+        dialog2.ui.setupUi(dialog2)
+        dialog2.setAttribute(QtCore.Qt.WA_DeleteOnClose)
+        dialog2.setWindowFlags(QtCore.Qt.Popup)
+
+        # center the dialog
+        point = self.rect().center()
+        global_point = self.mapToGlobal(point)
+        dialog2.move(global_point + QtCore.QPoint(-165, -240))
+
+        dialog2.exec()
 
     def stats_dialog(self):
-        self.dialog = QDialog()
-        self.dialog.ui = Ui_Dialog()
-        self.dialog.ui.setupUi(self.dialog)
-        self.dialog.setAttribute(QtCore.Qt.WA_DeleteOnClose)
-        self.dialog.setWindowFlags(QtCore.Qt.Popup)
+        dialog = QDialog()
+        dialog.ui = Ui_Dialog()
+        dialog.ui.setupUi(dialog)
+        dialog.setAttribute(QtCore.Qt.WA_DeleteOnClose)
+        dialog.setWindowFlags(QtCore.Qt.Popup)
 
-        w = self.dialog.width()
-        self.dialog.ui.tableWidget.setColumnWidth(0, w * 2 / 3)
-        self.dialog.ui.tableWidget.setColumnWidth(1, w / 3)
+        w = dialog.width()
+        dialog.ui.tableWidget.setColumnWidth(0, w * 2 / 3)
+        dialog.ui.tableWidget.setColumnWidth(1, w / 3)
 
         for n, key in enumerate(statistics.keys()):
             newitem = QTableWidgetItem(key)
-            self.dialog.ui.tableWidget.setItem(n, 0, newitem)
+            dialog.ui.tableWidget.setItem(n, 0, newitem)
             newitem = QTableWidgetItem(str(statistics[key]))
-            self.dialog.ui.tableWidget.setItem(n, 1, newitem)
-        self.dialog.exec()
+            dialog.ui.tableWidget.setItem(n, 1, newitem)
+
+        # center the dialog
+        point = self.rect().center()
+        global_point = self.mapToGlobal(point)
+        dialog.move(global_point + QtCore.QPoint(-130, -200))
+
+        dialog.exec()
         self.activateWindow()
 
     def on_key(self, event):
@@ -196,8 +207,7 @@ class Window(QMainWindow, Ui_Form):
             return
         elif len(self.used_words) == 6:
             return
-
-        if 65 <= event.key() <= 90:  # New Letter
+        elif 65 <= event.key() <= 90:  # New Letter
             new_letter = chr(event.key())
             if len(self.new_word) < 5 and not self.won:
                 self.new_word += new_letter
@@ -205,21 +215,17 @@ class Window(QMainWindow, Ui_Form):
                 self.T0[len(self.new_word) - 1].setText(html)
             return
 
-        if event.key() == 16777219:  # `Backspace`
+        elif event.key() == 16777219:  # `Backspace`
             self.new_word = self.new_word[:-1]
             self.T0[len(self.new_word)].setText('')
             return
-
-        if event.key() == 16777220:  # `Enter`
+        elif event.key() == 16777220:  # `Enter`
             self.add_word()
-
-        if event.key() == 16777217:  # hint `TAB`
+        elif event.key() == 16777217:  # hint `TAB`
             self.hint_apply()
-
-        if event.key() == 96:  # stats `tilde`
+        elif event.key() == 96:  # stats `tilde`
             self.stats_dialog()
-
-        if event.key() == 16777264:  # Help `F1`
+        elif event.key() == 16777264:  # Help `F1`
             self.info_dialog()
 
 
@@ -262,19 +268,27 @@ def statistics_saver(statistics):
         s.write(json.dumps(statistics))
 
 
-def logic(current_word, chosen_word):
+def logic(current_word, chosen_word) -> dict:
     correct_letters = {}
-
+    matches = ''
     if current_word not in wordlist:
         return
 
     for l in range(5):
-        if l + 1 not in correct_letters.keys():
-            correct_letters[l + 1] = ''
         if current_word[l] == chosen_word[l]:
-            correct_letters[l + 1] = 'green'
-        elif current_word[l] in chosen_word:
-            correct_letters[l + 1] = 'yellow'
+            correct_letters[l] = 'green'
+            matches += current_word[l]
+    for l in range(5):
+        if l not in correct_letters.keys():
+            correct_letters[l] = ''
+        if current_word[l] in chosen_word and correct_letters[l] != 'green':
+            r_count = current_word[:l+1].count(current_word[l])
+            h_count = chosen_word.count(current_word[l])
+            are_green = matches.count(current_word[l])
+            if r_count <= h_count - are_green:
+                correct_letters[l] = 'yellow'
+            else:
+                correct_letters[l] = ''
 
     return correct_letters
 
